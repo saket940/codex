@@ -1,0 +1,96 @@
+:root {
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: #e5eefb;
+  background: #0a1020;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; background: radial-gradient(circle at top, #13203f, #08111f 55%); min-height: 100vh; }
+a { color: inherit; text-decoration: none; }
+button, input, select, textarea { font: inherit; }
+main { width: min(1180px, calc(100% - 2rem)); margin: 0 auto 4rem; }
+
+.topbar {
+  width: min(1180px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.topbar nav { display: flex; gap: 1rem; align-items: center; }
+.topbar nav a { color: #c0cbe4; }
+.topbar nav a.active, .brand { color: #fff; font-weight: 700; }
+.brand { font-size: 1.25rem; }
+
+.hero, .dashboard-layout, .admin-layout {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.hero { grid-template-columns: 1.4fr 1fr; align-items: start; }
+.hero h1 { font-size: clamp(2.5rem, 4vw, 4.5rem); line-height: 1.05; margin: 0.5rem 0 1rem; }
+.hero-copy { max-width: 60ch; color: #b7c6e2; }
+.hero-actions, .button-row { display: flex; gap: 1rem; flex-wrap: wrap; }
+.section-gap { margin-top: 3rem; }
+.section-heading { display: flex; justify-content: space-between; align-items: end; gap: 1rem; margin-bottom: 1.25rem; }
+
+.card, .feature-card, .summary-card, .task-card, .auth-card, .nested-card {
+  background: rgba(8, 17, 31, 0.85);
+  border: 1px solid rgba(151, 173, 219, 0.18);
+  border-radius: 24px;
+  padding: 1.5rem;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+}
+.card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.25rem; }
+.internship-card { overflow: hidden; padding: 0; }
+.card-image { width: 100%; height: 200px; object-fit: cover; display: block; }
+.card-content { padding: 1.25rem; }
+.meta-row, .stats-grid { display: grid; gap: 1rem; }
+.meta-row { grid-template-columns: repeat(2, 1fr); color: #84a1d6; margin-top: 1rem; }
+.stats-grid { grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); margin-top: 1rem; }
+.stats-grid span { display: block; color: #8ca4d1; font-size: 0.9rem; }
+.stats-grid strong { font-size: 1.1rem; }
+
+.eyebrow { text-transform: uppercase; letter-spacing: 0.18em; color: #7fc1ff; font-size: 0.8rem; margin: 0; }
+.primary-btn, .secondary-btn, .ghost-btn {
+  border: none;
+  border-radius: 999px;
+  padding: 0.85rem 1.25rem;
+  cursor: pointer;
+}
+.primary-btn { background: linear-gradient(135deg, #54a6ff, #7f67ff); color: white; }
+.secondary-btn, .ghost-btn { background: transparent; color: #dce6f8; border: 1px solid rgba(151, 173, 219, 0.3); }
+
+.auth-layout, .page-center { display: grid; place-items: center; min-height: calc(100vh - 140px); }
+.auth-card { width: min(680px, 100%); }
+.form-grid { display: grid; gap: 1rem; margin-top: 1rem; }
+label { display: grid; gap: 0.45rem; color: #dce6f8; }
+input, select, textarea {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  border-radius: 14px;
+  border: 1px solid rgba(151, 173, 219, 0.25);
+  background: #101b31;
+  color: #fff;
+}
+.status-message { margin: 0; padding: 0.85rem 1rem; border-radius: 14px; }
+.status-message.error { background: rgba(255, 107, 129, 0.18); color: #ffc7cf; }
+.status-message.success { background: rgba(68, 200, 142, 0.18); color: #b7ffd4; }
+
+.dashboard-layout { grid-template-columns: minmax(300px, 380px) 1fr; }
+.progress-wrap { margin-top: 1rem; }
+.progress-bar { width: 100%; height: 12px; border-radius: 999px; background: #0d1730; overflow: hidden; margin-bottom: 0.5rem; }
+.progress-bar span { display: block; height: 100%; background: linear-gradient(135deg, #4dc0ff, #7d6bff); }
+.certificate-box, .question-box { background: #0d1730; border-radius: 20px; padding: 1rem; margin-top: 1rem; }
+.task-player iframe, .video-player { width: 100%; min-height: 320px; border: none; border-radius: 20px; margin: 1rem 0; }
+.nested-card { padding: 1rem; }
+
+@media (max-width: 900px) {
+  .hero, .dashboard-layout { grid-template-columns: 1fr; }
+  .topbar { flex-direction: column; }
+  .section-heading { flex-direction: column; align-items: start; }
+}
