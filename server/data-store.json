@@ -1,0 +1,119 @@
+{
+  "internships": [
+    {
+      "id": "ux-design",
+      "title": "UI/UX Design Internship",
+      "category": "Design",
+      "duration": "6 Weeks",
+      "image": "https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=1200&q=80",
+      "description": "Learn research, wireframing, prototyping, and interface critique with structured daily lessons.",
+      "overview": "This pathway prepares interns to design product experiences from discovery to polished prototype. Interns submit one deliverable per unlocked day.",
+      "tasks": [
+        {
+          "day": 1,
+          "title": "Intro to UX process",
+          "mediaType": "youtube",
+          "mediaUrl": "https://www.youtube.com/embed/Ovj4hFxko7c",
+          "questions": [
+            {
+              "id": "ux-q1",
+              "question": "What is the first UX step highlighted in this lesson?",
+              "options": ["User research", "Final handoff", "Paid ads", "Server deployment"],
+              "answer": "User research"
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "title": "Wireframing fundamentals",
+          "mediaType": "youtube",
+          "mediaUrl": "https://www.youtube.com/embed/c9Wg6Cb_YlU",
+          "questions": [
+            {
+              "id": "ux-q2",
+              "question": "Which artifact focuses on layout structure only?",
+              "options": ["Wireframe", "Brand book", "Invoice", "SEO report"],
+              "answer": "Wireframe"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "frontend-react",
+      "title": "Frontend React Internship",
+      "category": "Engineering",
+      "duration": "8 Weeks",
+      "image": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=1200&q=80",
+      "description": "Build interactive interfaces with React, routing, state management, and API integrations.",
+      "overview": "Interns progress through one unlocked day at a time. Every task includes a training video and a required quiz.",
+      "tasks": [
+        {
+          "day": 1,
+          "title": "React component basics",
+          "mediaType": "youtube",
+          "mediaUrl": "https://www.youtube.com/embed/bMknfKXIFA8",
+          "questions": [
+            {
+              "id": "fe-q1",
+              "question": "What is the main benefit of components?",
+              "options": ["Reusable UI blocks", "Slower pages", "No styling", "No props"],
+              "answer": "Reusable UI blocks"
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "title": "Working with props",
+          "mediaType": "youtube",
+          "mediaUrl": "https://www.youtube.com/embed/PHaECbrKgs0",
+          "questions": [
+            {
+              "id": "fe-q2",
+              "question": "Props are primarily used to...",
+              "options": ["Pass data to components", "Compile CSS", "Store database rows", "Replace HTML"],
+              "answer": "Pass data to components"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "digital-marketing",
+      "title": "Digital Marketing Internship",
+      "category": "Marketing",
+      "duration": "4 Weeks",
+      "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80",
+      "description": "Plan campaigns, analyse content, and learn performance marketing through guided practice.",
+      "overview": "This track mixes campaign strategy, reporting, and channel execution with daily quizzes.",
+      "tasks": [
+        {
+          "day": 1,
+          "title": "Marketing funnel basics",
+          "mediaType": "youtube",
+          "mediaUrl": "https://www.youtube.com/embed/2tZt3sXWoH0",
+          "questions": [
+            {
+              "id": "dm-q1",
+              "question": "Which stage usually comes before conversion?",
+              "options": ["Consideration", "Churn", "Payroll", "Refund"],
+              "answer": "Consideration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "users": [
+    {
+      "id": "admin-1",
+      "name": "Platform Admin",
+      "email": "admin@internhub.dev",
+      "password": "admin123",
+      "role": "admin",
+      "internshipId": null,
+      "progress": {},
+      "certificates": []
+    }
+  ]
+}
